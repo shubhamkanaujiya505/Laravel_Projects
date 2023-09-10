@@ -13,6 +13,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('ravikant', function () {
-    return view('hello');
+Route::get('/welcome', function () {
+    return view('welcome');
 });
+// Route::get('hello', function(){
+//     return view('hello');
+// });
+Route::view('hello','hello');
+
+// Route::get('tc',function(){  // this page define on view folder
+//     return view('tc');
+// });
+
+Route::view('tc','/tc');
+
+Route::view('about','/about');
